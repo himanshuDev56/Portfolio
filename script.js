@@ -66,7 +66,7 @@ function textSequence(i) {
 //     console.error("Error:", error);
 //   });
 
-fetch("https://flamboyant-payne-5cd134.netlify.app/http://quotes.stormconsultancy.co.uk/random.json")
+fetch(" https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json",)
   .then((response) => response.json())
   .then((data) => {
     quote.innerHTML = data.quote;
