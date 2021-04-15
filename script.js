@@ -66,7 +66,10 @@ function textSequence(i) {
 //     console.error("Error:", error);
 //   });
 
-fetch(" https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json",)
+    
+
+
+fetch("https://jsonp.afeld.me/?url=https://quotes.stormconsultancy.co.uk/random.json")
   .then((response) => response.json())
   .then((data) => {
     quote.innerHTML = data.quote;
